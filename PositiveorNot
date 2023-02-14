@@ -1,0 +1,16 @@
+/*
+ problem : check whether a number Positive or not means Negative
+*/
+import java.util.Scanner;                                       //package for usage of scanner class for user input 
+public class Main {                                            //it was a Main class 
+    public static void main(String[] args) {                   //it was a main function
+      Scanner scan=new Scanner(System.in);                     //here Scanner class for user input 
+      int _number=scan.nextInt();                              //because of taking integer input SO nextInt()
+      if(_number>=0){       //condition as if the entered number greater than or equal to o only it becomes positive
+          System.out.println(_number +" is positive number");//output as positive
+      }else{
+          System.out.println(_number +" Negative number");//else Negative
+
+      }
+    }
+}
