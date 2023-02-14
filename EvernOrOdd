@@ -1,0 +1,16 @@
+/*
+Problem : Whether a number is Even or Odd
+*/
+import java.util.Scanner;            //importing the util.Scanner package
+public class EvenOrOdd {              //class creation
+    public static void main(String[] args) {//main function declaration
+        Scanner scan=new Scanner(System.in);//it is for user input of primitive types
+        int _num=scan.nextInt();//taking the integer user input
+        if(_num%2==0){//checking the condition as if the given number is gives reminder as 0 while percentaging with 2 than we called the number as Even
+            System.out.println(_num+" is Even number");
+        }else{
+            System.out.println(_num+" is Odd number");//else the number is odd
+        }
+
+    }
+}
