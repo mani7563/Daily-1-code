@@ -1,0 +1,14 @@
+import java.util.Scanner;//package for user input by Scanner class by using this we create and object of the class in the program
+public class Main {       //class name
+    public static void main(String[] args) {//main function
+        Scanner  scan=new Scanner(System.in);//
+        int _number=scan.nextInt();//taking the input from the user
+       int sum=0;//declaring and initializing the variable
+      for(int i=1;i<=_number;i++){//looping the variable with n times
+           sum=sum+i;//doing sum for the values 
+//we can also print over here but if we print here it will print all the values from initial stage
+
+        }
+        System.out.println(sum);//printing the output
+    }
+}
