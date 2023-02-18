@@ -1,5 +1,5 @@
 import java.util.Scanner;     //importing the Scanner scan class for taking the primitive data types of input
-public class Main {     //main class declaration
+public class GreatestAmoungOfTwoNum {     //main class declaration
     public static void main(String[] args) {      //main function declaration
         Scanner scan=new Scanner(System.in);      //scanner class declartaion for taking the input
         int t=scan.nextInt();     //t value declaration for take input
