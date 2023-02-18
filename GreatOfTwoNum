@@ -1,0 +1,18 @@
+import java.util.Scanner;     //importing the Scanner scan class for taking the primitive data types of input
+public class Main {     //main class declaration
+    public static void main(String[] args) {      //main function declaration
+        Scanner scan=new Scanner(System.in);      //scanner class declartaion for taking the input
+        int t=scan.nextInt();     //t value declaration for take input
+        while(t-->0){           //while loop for number of test cases
+            int _num1=scan.nextInt();     //_num1 declaration for taking the user input
+            int _num2=scan.nextInt();     //_num2 declaration for taking the user input
+            if(_num1==_num2){     //comparition with equal to operator
+                System.out.println("both values are equal");      //printing the values for output console
+            }else if(_num1>_num2){      //_num1 comparition for show _num1 is greater value 
+                System.out.println(_num1+" is greater");    //prints output if _num1 is greater value
+            }else{
+                System.out.println(_num2+" is greater");      //else part will prints the output if _num2 is greater
+            }
+        }
+    }
+}
