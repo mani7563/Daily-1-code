@@ -1,0 +1,19 @@
+import java.util.Scanner;       //importing the Scanner class for taking the inputs of primitive types
+public class GreaAmoungOfthreeNum{             //declaring the main class
+    public static void main(String[] args) {                    //declartion of main function
+        Scanner scan=new Scanner(System.in);                    //taking the user input with scanner class
+        int t=scan.nextInt();                   //taking the user input for t variable
+        for(int i=0;i<t;i++){                   //taking the for loop for number of test cases in the program
+            int _num1=scan.nextInt();            //taking the _num1 input from the user
+            int _num2=scan.nextInt();           //declarting the _num2 for taking  the user input
+            int _num3=scan.nextInt();           //declaring  the _num3 for taking the user input
+             if(_num1>_num2&&_num1>_num3){      //conditioning the three variables for to tell _num1 is greater among the three
+                System.out.println(_num1+" is greater");
+            }else if(_num2>_num1&&_num2>_num3){     //conditioning the three variables for to tell _num2 is greater among the three
+                System.out.println(_num2+" is greater");
+            }else{
+                System.out.println(_num3+" is greater");        //else part will print that if no two variables are true then it will print the third variable
+            }
+        }
+    }
+}
