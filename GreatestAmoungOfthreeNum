@@ -1,5 +1,5 @@
 import java.util.Scanner;       //importing the Scanner class for taking the inputs of primitive types
-public class GreaAmoungOfthreeNum{             //declaring the main class
+public class GreatestAmoungOfthreeNum{             //declaring the main class
     public static void main(String[] args) {                    //declartion of main function
         Scanner scan=new Scanner(System.in);                    //taking the user input with scanner class
         int t=scan.nextInt();                   //taking the user input for t variable
