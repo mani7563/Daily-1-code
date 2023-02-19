@@ -1,0 +1,18 @@
+import java.util.Scanner;   //this import package is for taking the primitive data type inputs
+
+public class LeapYearOrNot{   //declaration of LeapYearOrNot class
+    public static void main(String[] args) {      //declaring the main function
+      Scanner scan=new Scanner(System.in);        //declaring th Scanner class for user input
+      int t=scan.nextInt();         //declaring the t vaiable 
+      for(int i=0;i<t;i++){         //looping the statements for number test cases we use
+          int num =scan.nextInt();    //declaring the num variable
+          if(num%400==0 || num%4==0 && num%100!=0){     //conditioning for if the num is  entirly divisible by 400 and 4 but not by 100 then it is called leap year 
+              System.out.println(num+" is a Leap year");
+          }else{                                          // if the above condition is false then it is called not a leap year
+          
+              System.out.println(num+" is not a leap year");
+          }
+      }
+        
+    }
+}
