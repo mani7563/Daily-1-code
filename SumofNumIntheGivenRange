@@ -2,16 +2,16 @@
 
 problem: Sum of the N numbers in the given Range
 */
-import java.util.Scanner;//it was the Scanner class for taking the input it only works for primitive data types in java
-class SumofNumIntheGivenRange{//main class
-public static void main(String[] args){//main function
-Scanner scan=new Scanner(System.in);//taking the user input with Scanner class for primitive types
-int a=scan.nextInt();//taking the a value as input from the user
-int b=scan.nextInt();//taking the value as input from the uer
-int sum=0;//intializing the value 0
-for(int i=a;i<b;i++){//conditioning with in between of a  to b
-sum=sum+i;//adding the values here between of a to b in sum variable
+import java.util.Scanner;           //it was the Scanner class for taking the input it only works for primitive data types in java
+class SumofNumIntheGivenRange{      //main class
+public static void main(String[] args){   //main function
+Scanner scan=new Scanner(System.in);    //taking the user input with Scanner class for primitive types
+int a=scan.nextInt();   //taking the a value as input from the user
+int b=scan.nextInt();   //taking the value as input from the uer
+int sum=0;              //intializing the value 0
+for(int i=a;i<b;i++){   //conditioning with in between of a  to b
+sum=sum+i;              //adding the values here between of a to b in sum variable
 }
-System.out.println(sum);//printing the value
+System.out.println(sum);    //printing the value
 }
 }
