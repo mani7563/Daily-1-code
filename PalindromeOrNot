@@ -1,0 +1,21 @@
+// Problem : given number is polindrone or not
+import java.util.Scanner;   //package for taking the primitive types
+public class PalindromeOrNot{ //PalindromeOrNot class declaration
+    public static void main(String[] args) { //main function declaration
+        Scanner scan = new Scanner(System.in);  //Scanner class for take user input
+        int n = scan.nextInt();             //declaring n variable//515
+        int temp = n;                   //storing the n vaiable in the temp variable for last comaprition purpose
+        int rem, rev = 0;                   //initializing the rem,rev variables with 0
+        while (temp != 0) {                 //checking that temp must not be equal to 0
+            rem = temp % 10;                 //storing the reminder of temp value in rem variable
+            rev = rev * 10 + rem;              // stroing the rem value in the rev variable with rev*10+rem means multipling the initial rev of 0*10+rem=5
+            temp = temp / 10;                    //for quotient value temp/10 for last to second digit reminder value getting purpose 
+
+        }
+        if (rev == n) {            //if rev==n then the both numbers are equal then it is a palindrome
+            System.out.println("palindrome");             //printing as palindrome
+        } else {
+            System.out.println("not a palindrome");             //other wise not a palindrome
+        }
+    }
+}
