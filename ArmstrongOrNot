@@ -1,0 +1,21 @@
+
+ // problem : Armstrong number or not
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scan=new Scanner(System.in);
+        int n=scan.nextInt();
+        int rem,rev=0;
+        int temp=n;
+        while(temp!=0){
+            rem=temp%10;
+            rev=rev+(rem*rem*rem);
+            temp=temp/10;
+        }if(n==rev){
+            System.out.println("armstrong number");
+        }else{
+            System.out.println("not an armstrong number");
+        }
+    }
+}
