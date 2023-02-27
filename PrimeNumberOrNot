@@ -1,0 +1,21 @@
+//Problem : Check if the given number is prime or not
+import java.util.*;   //this package is for the taking the primitive user inputs of types
+public class PrimeNumberOrNot{    //class is declared of PrimeNumberOrNot
+public static void main(String[] args){   //main function
+Scanner scan=new Scanner(System.in);    //Scanner class for taking the user input
+int n=scan.nextInt();     //n variable declaration 
+int count=0;    //count variable initialization
+for(int i=1;i<=n;i++){      //using the for loop for number of iterations
+if(n%i==0){                 //conditioning for n divid by iteration until condition becomes false of i
+count++;                          //increasing the count variable checking how many times it will increment
+}
+}
+if(count==2){                       //the incremented count value is equal to 2 times only it is called prime because prime number having two factors itself and 1
+System.out.println(n+" is the Prime"); //printing as prime
+}
+else{
+System.out.println(n+" is not a Prime number");//other wise not prime
+}
+}
+}
+
